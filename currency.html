@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a currency converter website made with API">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    <div class="converter">
+        <h1>Currency Converter</h1>
+    
+        <div class="container">
+            <label for="from">From:</label>
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="from">
+                <!-- Options dynamically populated via JavaScript -->
+            </select>
+        </div>
+        <div>
+            <label for="to">To:</label>
+            <select id="to">
+                <!-- Options dynamically populated via JavaScript -->
+            </select>
+        </div>
+    
+        <button type="button" onclick="convert()" id="subt">Calculate</button>
+        <h2>Converted Amount: <span id="convertedAmount"></span></h2>
+   
+        <div class="result">
+            <p class="date"></p>   
+        </div>
+    </div>
+<script src="currency.js"></script>
+</body>
+</html>
