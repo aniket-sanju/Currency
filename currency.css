@@ -53,3 +53,8 @@ body {
 h2 {
 margin-top: 20px;
 }
+
+@media screen and (max-width:400px) {
+    .converter input, .converter select {
+    padding: 8px 0;
+}
